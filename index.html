@@ -1,0 +1,158 @@
+﻿<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/" href="https://img1.pic.in.th/images/yalasci-logo.md.png">
+  <title>ระบบจัดการสลิปเงินเดือน (E-Slip Management)</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Sarabun", sans-serif;
+      background: #f0edf5;
+      color: #1f1f1f;
+      padding-bottom: 120px;
+    }
+    .hero {
+      background: #9c27b0;
+      color: #e0f7fa;
+      text-align: center;
+      padding: 40px 16px;
+    }
+    .hero h1 {
+      margin: 0;
+      font-size: clamp(2rem, 4vw, 3.5rem);
+      letter-spacing: 1px;
+    }
+    .hero p {
+      margin: 10px auto 0;
+      max-width: 720px;
+      font-size: 1.05rem;
+      opacity: 0.9;
+    }
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 20px;
+      max-width: 1080px;
+      margin: 32px auto 60px;
+      padding: 0 16px;
+      z-index: 1;
+      position: relative;
+    }
+    .card-link {
+      text-decoration: none;
+      color: inherit;
+    }
+    .card {
+      background: linear-gradient(180deg, #ffffff 0%, #f8f0ff 100%);
+      border-radius: 22px;
+      padding: 28px;
+      min-height: 190px;
+      box-shadow: 0 18px 45px rgba(79, 35, 111, 0.14);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      transition: transform 0.22s ease, box-shadow 0.22s ease, background 0.22s ease;
+      border: 1px solid rgba(255, 255, 255, 0.8);
+    }
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 26px 55px rgba(63, 23, 103, 0.2);
+      background: linear-gradient(180deg, #f3e5ff 0%, #eae3ff 100%);
+    }
+    .card .icon {
+      width: 200px;
+      height: 200px;
+      border-radius: 80%;
+      object-fit: cover;
+      margin-bottom: 18px;
+      box-shadow: 0 10px 20px rgba(106, 34, 165, 0.12);
+    }
+    .card h2 {
+      margin: 0;
+      font-size: 1.45rem;
+      letter-spacing: 0.4px;
+      color: #2a0353;
+    }
+    .footer {
+      position: fixed;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      text-align: center;
+      padding: 18px 16px;
+      font-size: 0.95rem;
+      color: #6b587a;
+      background: rgba(255, 255, 255, 0.95);
+      border-top: 1px solid rgba(169, 138, 209, 0.25);
+      box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.06);
+      z-index: 20;
+    }
+    .footer span {
+      display: block;
+      line-height: 1.6;
+    }
+    @media (max-width: 640px) {
+      .hero {
+        padding: 32px 16px;
+      }
+      .hero p {
+        font-size: 1rem;
+      }
+      .cards {
+        gap: 16px;
+        margin-top: 24px;
+      }
+      .card {
+        padding: 22px;
+        min-height: 170px;
+      }
+      .card .icon {
+        width: 52px;
+        height: 52px;
+        font-size: 24px;
+        margin-bottom: 14px;
+      }
+      .card h2 {
+        font-size: 1.3rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <section class="hero">
+    <h1>ระบบจัดการสลิปเงินเดือน (E-Slip Management)</h1>
+    <p>เลือกประเภทผู้ใช้งานเพื่อเข้าสู่หน้าที่เกี่ยวข้องได้เลย</p>
+  </section>
+
+  <main class="cards">
+    <a class="card-link" href="civil-servant.html">
+      <article class="card">
+        <img src="https://i.pinimg.com/originals/e9/d3/7d/e9d37d6c989cfa792aa5785232e3f8ea.jpg" alt="ข้าราชการ" class="icon">
+        <h2>ข้าราชการ</h2>
+      </article>
+    </a>
+
+    <a class="card-link" href="employee.html">
+      <article class="card">
+        <img src="https://img.magnific.com/premium-vector/indonesian-man-woman-civil-servant-uniform_429315-176.jpg" alt="พนักงานราชการ" class="icon">
+        <h2>พนักงานราชการ</h2>
+      </article>
+    </a>
+
+    <a class="card-link" href="contractor.html">
+      <article class="card">
+        <img src="https://img.magnific.com/premium-vector/people-suit-business-people-vector-illustration_77417-2916.jpg" alt="จ้างเหมา/บริการ" class="icon">
+        <h2>จ้างเหมา/บริการ</h2>
+      </article>
+    </a>
+  </main>
+  <footer class="footer">
+    <span>Copyright © 2026 ศูนย์วิทยาศาสตร์เพื่อการศึกษายะลา</span>
+    <span>งานการเงินและบัญชี พัฒนาโดย ซาลาฮุดดิน วาโด</span>
+  </footer>
+</body>
+</html>
